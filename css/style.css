@@ -465,20 +465,23 @@ main .formation .formation-item div:first-child .line, main .formation .experien
     padding: 0;
     margin: 0;
   }
-  main {
+  body main {
     margin: 0;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  main .left, main .right {
+  body main .left, body main .right {
     padding: 1rem 2rem;
     margin: 0 auto;
   }
-  main .right .interests .interests-container {
+  body main .right .interests .interests-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  body main .bx-printer {
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
