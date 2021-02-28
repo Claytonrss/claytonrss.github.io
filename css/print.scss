@@ -1,0 +1,48 @@
+@media print {
+
+    body.print-cv {
+        
+       --h1-font-size: 0.938rem;
+       --h2-font-size: 0.938rem;
+       --h3-font-size: 0.875rem;
+       --normal-font-size: 0.813rem;
+       --small-font-size: 0.75rem;
+       --smaller-font-size: 0.688rem;
+       
+       margin: 0;
+
+       main{
+
+            height: 100vh;
+            background-color: #FFF;
+            box-shadow: 0;
+            border-radius: 0;
+
+            &>div:first-child{
+                justify-content: start;
+            }
+       }
+
+       .section{
+            margin: 0.5rem 0;
+        }
+       
+        
+       .perfil{
+           div:first-child{
+
+                justify-content: center;
+
+               i{
+                   display: none;
+               }
+
+           }
+
+       }
+
+       .social, .interests{
+           display: none;
+       }
+   }
+ }

@@ -1,0 +1,45 @@
+body.light-mode {
+
+    color: $text-color-light;
+    background-color: $body-color-light;
+
+    main{
+        box-shadow: 0.25rem 0.25rem 0.5rem transparentize($text-color-light, 0.5);
+    }
+    
+    .left{
+
+        background-color: $container-color-1-light;
+
+        .perfil{
+            img{
+                box-shadow: 0.25rem 0.25rem 0.5rem transparentize($text-color-light, 0.5);
+            }
+        }
+
+        ul{
+            li{
+                background-color: transparentize(lighten($text-color-light, $amount: 90%),0.2);
+
+                &:hover{
+                    background-color: transparentize(lighten($text-color-light, $amount: 10%),0.8);
+                }
+            }
+        }
+    }
+
+    .right{
+        background-color: $container-color-2-light;
+    }
+
+    h1, h3, .section-title{
+        color: $title-color-light;
+    }
+
+    .point{
+        background-color: lighten($title-color-light, $amount: 20%);
+    }
+    .line{
+        background-color: lighten($title-color-light, $amount: 60%);
+    }
+}

@@ -1,0 +1,45 @@
+body.dark-mode {
+
+    color: $text-color-dark;
+    background-color: $body-color-dark;
+
+    main{
+        box-shadow: 0.25rem 0.25rem 0.5rem transparentize($text-color-dark, 0.5);
+    }
+    
+    .left{
+
+        background-color: $container-color-1-dark;
+
+        .perfil{
+            img{
+                box-shadow: 0.25rem 0.25rem 0.5rem transparentize($text-color-dark, 0.5);
+            }
+        }
+
+        ul{
+            li{
+                background-color: transparentize(lighten($text-color-dark, $amount: 90%),0.9);
+
+                &:hover{
+                    background-color: transparentize(lighten($text-color-dark, $amount: 10%),0.8);
+                }
+            }
+        }
+    }
+
+    .right{
+        background-color: $container-color-2-dark;
+    }
+
+    h1, h3, .section-title{
+        color: $title-color-dark;
+    }
+
+    .point{
+        background-color: darken($title-color-dark, $amount: 20%);
+    }
+    .line{
+        background-color: darken($title-color-dark, $amount: 60%);
+    }
+}
