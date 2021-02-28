@@ -266,23 +266,28 @@ main{
     body{
         padding: 0;
         margin: 0;
+        
+        main{
+    
+            margin: 0;
+            grid-template-columns:1fr;
+            
+            .left, .right{
+                padding: 1rem 2rem;
+                margin: 0 auto;
+            }
+    
+            .right .interests .interests-container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+    
+            .bx-printer{
+                visibility: hidden;
+            }
+    
+        }
     }
    
-    main{
-
-        margin: 0;
-        grid-template-columns:1fr;
-        
-        .left, .right{
-            padding: 1rem 2rem;
-            margin: 0 auto;
-        }
-
-        .right .interests .interests-container{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-    }
 
 }
