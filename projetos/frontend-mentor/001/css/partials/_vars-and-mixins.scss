@@ -1,0 +1,73 @@
+// Cores
+$pink: #ff52bf;
+$light-pink: #ff8fd8;
+$light-red: hsl(0, 100%, 63%);
+$dark-cyan: #00252e;
+$pale-blue: #F6FBFF;
+
+// Fontes
+$fonte-1: 'Open Sans', sans-serif;
+$fonte-2: 'Poppins', sans-serif;
+
+$base-size: 16;
+
+@function pxToRem($target, $context: $base-size){
+  @return ($target / $context) * 1rem;
+}
+
+@mixin flex-center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin font-type-1($size, $weight: '400') {
+
+	font-family: $fonte-1;
+	font-size: pxToRem($size);
+	font-weight: $weight;
+	line-height: pxToRem($size*1.5);
+
+	@if $size == 18 {
+		font-size: pxToRem(18);
+		line-height: pxToRem(18*1.5);
+	}
+	@else if $size == 20 {
+		font-size: pxToRem(20);
+		line-height: pxToRem(18*1.5);
+	}
+	// ...
+}
+
+@mixin font-type-2($size, $weight:700) {
+
+	font-family: $fonte-2;
+	font-size: pxToRem($size);
+	font-weight: $weight;
+
+	@if $size == 16 {
+		font-size: pxToRem(16);
+		line-height: pxToRem(16*1.5);
+		letter-spacing: 1px;
+		font-weight: 700;
+	}
+	@if $size == 18 {
+		font-size: pxToRem(18);
+		line-height: pxToRem(18*1.5);
+		letter-spacing: 1px;
+		font-weight: 500;
+	}
+	@else if $size == 24 {
+		font-size: pxToRem(24);
+		line-height: pxToRem(30);
+	}
+	@else if $size == 48 {
+		font-size: pxToRem(48);
+		font-weight: 700;
+		line-height: pxToRem(48*1.5);
+	}
+}
+
+
+
+
