@@ -94,11 +94,21 @@ main {
           padding: 0.8em;
           display: block;
           cursor: default;
+          position: relative;
 
           &:not([href='#']) {
             cursor: pointer;
-            border: double 3px rgba(247, 202, 24, 0.3);
-            border-radius: 5px;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              background-color: rgba(247, 202, 24, 0.3);
+              border-radius: 50%;
+              top: -5px;
+              right: -5px;
+            }
           }
         }
       }
